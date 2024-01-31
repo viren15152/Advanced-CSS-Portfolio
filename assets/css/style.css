@@ -94,24 +94,31 @@ main {
   padding: 2% 6%;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center; /* Aligns vertically in the center */
   text-align: right;
 }
 
 .hero-banner div {
   flex: 0 0 90%;
+  max-width: 60%; 
 }
 
 .hero-banner h2 {
   background-color: var(--secondary);
   color: var(--tertiary);
-  margin: 50px 0;
+  margin: 0; 
   padding: 5px 10px;
   font-size: 2.3rem;
   line-height: 1.2;
   display: inline;
 }
+
+.hero-banner img {
+  max-width: 100%; 
+}
 /* Hero style end */
+
+
 
 /* Content style start */
 .page-wrapper {
@@ -223,7 +230,7 @@ main {
 
 /* portfolio project images */
 .weather-dashboard {
-  background-image: url(''); /* Add the path to your image */
+  background-image: url('assets/images/Screenshot 2024-01-30 at 22.31.43.png'); /* Add the path to your image */
   background-position: center;
   background-size: cover;
   min-height: 250px;
