@@ -1,15 +1,17 @@
+/* Apply box-sizing to all elements for consistent sizing */
 * {
   box-sizing: border-box;
 }
 
-/* brand color palette */
+/* Define brand color palette using CSS variables */
 :root {
-  --primary:rgba(68, 88, 119, 1);
-  --secondary:rgba(146, 204, 206, 1);
+  --primary: rgba(68, 88, 119, 1);
+  --secondary: rgba(146, 204, 206, 1);
   --tertiary: rgba(49, 52, 61, 1);
   --light: rgba(238, 238, 247, 1);
 }
 
+/* Global styling for the body */
 body {
   margin: 0;
   padding: 0;
@@ -19,15 +21,17 @@ body {
   line-height: 1.5;
 }
 
+/* Reset margins for heading elements */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+/* Reset margin for paragraphs */
 p {
   margin: 0;
 }
 
-/* Header style start */
+/* Header styles start */
 header {
   padding: 15px 6% 15px 0;
   display: flex;
@@ -76,14 +80,15 @@ nav a:hover {
 nav a:last-child {
   margin-right: 0;
 }
-/* Header style ends */
+/* Header styles end */
 
+/* Main content area styles */
 main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
-/* Hero style start */
+/* Hero banner styles start */
 .hero-banner {
   background-image: url('assets/images/neon-abstract-graphic-contours-tiger-jump-wild-animal-dark-background-isolate-header-banner_868611-2795.avif');
   background-size: cover;
@@ -116,11 +121,9 @@ main {
 .hero-banner img {
   max-width: 100%; 
 }
-/* Hero style end */
+/* Hero banner styles end */
 
-
-
-/* Content style start */
+/* Content area styles start */
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
@@ -178,7 +181,7 @@ main {
   font-size: 0.9rem;
 }
 
-/* feature first portfolio item */
+/* Feature the first portfolio item */
 .flex-item:first-child {
   min-height: 400px;
   flex-basis: 100%;
@@ -196,9 +199,9 @@ main {
 .flex-item h3 {
   font-size: 1.6rem;
 }
-/* Content style end */
+/* Content area styles end */
 
-/* Contact style start */
+/* Contact area styles start */
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -226,11 +229,11 @@ main {
   background-size: 100% 88%;
   color: rgba(146, 204, 206, 0.4);
 }
-/* Contact style ends*/
+/* Contact area styles end */
 
-/* portfolio project images */
+/* Portfolio project images start */
 .weather-dashboard {
-  background-image: url('assets/images/Screenshot 2024-01-30 at 22.31.43.png'); /* Add the path to your image */
+  background-image: url('assets/images/Screenshot 2024-01-30 at 22.31.43.png');
   background-position: center;
   background-size: cover;
   min-height: 250px;
@@ -254,60 +257,60 @@ main {
   background-size: cover;
   min-height: 250px;
 }
-/* end portfolio project images */
+/* Portfolio project images end */
 
-/* Media Quary start */
+/* Media Query styles start */
 @media screen and (max-width: 980px) {
   header {
-      padding: 0 0 10px 0;
-      justify-content: center;
-      text-align: center;
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
   }
 
   header h1 {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 10vw;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
   }
 
   header nav {
-      justify-content: center;
+    justify-content: center;
   }
 
   .page-section > h2,
   .page-section > div {
-      flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 
   .page-section > h2 {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .flex-item,
   .flex-item:first-child {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
 
   .flex-item:first-child {
-      min-height: 150px;
+    min-height: 150px;
   }
 
   .hero-banner {
-      justify-content: center;
-      text-align: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .contact address {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
-/* Media Query Ends */
+/* Media Query styles end */
