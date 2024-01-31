@@ -254,6 +254,14 @@ main {
 
 .work-day-scheduler {
   background-image: url(''); /* Add the path to your image */
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+}
+
+.flex-item.coding-quiz {
+  background-image: url(''); /* Add the path to your image */
+  background-position: center;
   background-size: cover;
   min-height: 250px;
 }
@@ -313,4 +321,7 @@ main {
     align-items: flex-start;
   }
 }
-/* Media Query styles end */
+/* Media Query styles end */ 
+
+
+
