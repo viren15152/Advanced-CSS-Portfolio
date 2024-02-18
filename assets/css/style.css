@@ -90,7 +90,7 @@ main {
 
 /* Hero banner styles start */
 .hero-banner {
-  background-image: url('assets/images/neon-abstract-graphic-contours-tiger-jump-wild-animal-dark-background-isolate-header-banner_868611-2795.avif');
+  background-image: url('/images/neon-abstract-graphic-contours-tiger-jump-wild-animal-dark-background-isolate-header-banner_868611-2795.avif');
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -233,34 +233,34 @@ main {
 
 /* Portfolio project images start */
 .weather-dashboard {
-  background-image: url('assets/images/Weather App.png');
+  background-image: url('../images/Weather App.png');
   background-position: center;
   background-size: cover;
   min-height: 250px;
 }
 
 .cms-tech-blog {
-  background-image: url(''); /* Add the path to your image */
+  background-image: url('../images/CMS Tech Blog.png'); /* Add the path to your image */
   background-position: center;
   background-size: cover;
   min-height: 250px;
 }
 
 .horiseon {
-  background-image: url('');
+  background-image: url('../images/Horiseon.png');
   background-size: cover;
   min-height: 250px;
 }
 
 .work-day-scheduler {
-  background-image: url(''); /* Add the path to your image */
+  background-image: url('../images/Work-Day-Scheduler.png'); /* Add the path to your image */
   background-position: center;
   background-size: cover;
   min-height: 250px;
 }
 
 .flex-item.coding-quiz {
-  background-image: url(''); /* Add the path to your image */
+  background-image: url('../images/Coding Quiz.png'); /* Add the path to your image */
   background-position: center;
   background-size: cover;
   min-height: 250px;
