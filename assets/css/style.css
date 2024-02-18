@@ -5,323 +5,357 @@
 
 /* Define brand color palette using CSS variables */
 :root {
-  --primary: rgba(68, 88, 119, 1);
-  --secondary: rgba(146, 204, 206, 1);
-  --tertiary: rgba(49, 52, 61, 1);
-  --light: rgba(238, 238, 247, 1);
+  --primary: rgba(68, 88, 119, 1);        /* Primary brand color */
+  --secondary: rgba(146, 204, 206, 1);    /* Secondary brand color */
+  --tertiary: rgba(49, 52, 61, 1);        /* Tertiary brand color */
+  --light: rgba(238, 238, 247, 1);        /* Light background color */
 }
 
 /* Global styling for the body */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--primary);
-  background-color: var(--light);
-  line-height: 1.5;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Set font stack */
+  color: var(--primary);                  /* Set text color */
+  background-color: var(--light);         /* Set background color */
+  line-height: 1.5;                        /* Set line height */
 }
 
 /* Reset margins for heading elements */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 0;                              /* Reset margins for headings */
 }
 
 /* Reset margin for paragraphs */
 p {
-  margin: 0;
+  margin: 0;                              /* Reset margin for paragraphs */
 }
 
 /* Header styles start */
 header {
-  padding: 15px 6% 15px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: var(--tertiary);
-  box-shadow: 0 5px 35px rgba(189, 226, 228, 0.4);
+  padding: 15px 6% 15px 0;                /* Set padding for header */
+  display: flex;                          /* Use flexbox for layout */
+  flex-direction: row;                    /* Arrange items in a row */
+  justify-content: space-between;         /* Distribute space between items */
+  flex-wrap: wrap;                        /* Allow items to wrap */
+  align-items: center;                    /* Align items vertically */
+  background-color: var(--tertiary);      /* Set background color */
+  box-shadow: 0 5px 35px rgba(189, 226, 228, 0.4); /* Add box shadow */
 }
 
+/* Styling for the header's h1 element */
 header h1 {
-  color: var(--tertiary);
-  background-color: var(--secondary);
-  padding: 5px 1% 5px 6%;
-  margin: 0;
-  font-size: 3vw;
-  line-height: 1;
-  display: inline;
+  color: var(--tertiary);                 /* Set text color */
+  background-color: var(--secondary);     /* Set background color */
+  padding: 5px 1% 5px 6%;                 /* Set padding */
+  margin: 0;                              /* Reset margin */
+  font-size: 3vw;                         /* Set font size */
+  line-height: 1;                         /* Set line height */
+  display: inline;                        /* Make inline */
 }
 
+/* Styling for the navigation */
 nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;                          /* Use flexbox for layout */
+  flex-direction: row;                    /* Arrange items in a row */
+  flex-wrap: wrap;                        /* Allow items to wrap */
 }
 
+/* Styling for navigation links */
 nav a {
-  text-decoration: none;
-  padding: 5px 10px;
-  color: var(--secondary);
-  margin-right: 10px;
-  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
-  background-repeat: 10px;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  font-size: 1.4rem;
+  text-decoration: none;                  /* Remove underline */
+  padding: 5px 10px;                      /* Set padding */
+  color: var(--secondary);                /* Set text color */
+  margin-right: 10px;                     /* Set margin */
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%); /* Set background gradient */
+  background-repeat: 10px;                /* Set background repeat */
+  background-size: 100% 0.2em;            /* Set background size */
+  background-position: bottom;            /* Set background position */
+  transition: all 0.25s ease-in;          /* Add transition effect */
+  font-size: 1.4rem;                      /* Set font size */
 }
 
+/* Styling for navigation links on hover */
 nav a:hover {
-  background-size: 100% 100%;
-  color: var(--primary);
+  background-size: 100% 100%;             /* Expand background on hover */
+  color: var(--primary);                  /* Change text color on hover */
 }
 
+/* Styling for the last navigation link */
 nav a:last-child {
-  margin-right: 0;
+  margin-right: 0;                        /* Remove margin for last item */
 }
 /* Header styles end */
 
 /* Main content area styles */
 main {
-  margin-top: 20px;
-  margin-bottom: 45px;
+  margin-top: 20px;                       /* Set top margin */
+  margin-bottom: 45px;                    /* Set bottom margin */
 }
 
 /* Hero banner styles start */
 .hero-banner {
-  background-image: url('/images/neon-abstract-graphic-contours-tiger-jump-wild-animal-dark-background-isolate-header-banner_868611-2795.avif');
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light;
-  min-height: 70vh;
-  color: var(--light);
-  padding: 2% 6%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; /* Aligns vertically in the center */
-  text-align: right;
+  background-image: url('/images/neon-abstract-graphic-contours-tiger-jump-wild-animal-dark-background-isolate-header-banner_868611-2795.avif'); /* Set background image */
+  background-size: cover;                 /* Set background size */
+  background-position: center;             /* Set background position */
+  background-blend-mode: soft-light;      /* Set background blend mode */
+  min-height: 70vh;                       /* Set minimum height */
+  color: var(--light);                    /* Set text color */
+  padding: 2% 6%;                         /* Set padding */
+  display: flex;                          /* Use flexbox for layout */
+  justify-content: flex-end;              /* Align items to the end */
+  align-items: center;                    /* Align items vertically */
+  text-align: right;                      /* Align text to the right */
 }
 
+/* Styling for elements inside the hero banner */
 .hero-banner div {
-  flex: 0 0 90%;
-  max-width: 60%; 
+  flex: 0 0 90%;                          /* Set flex properties */
+  max-width: 60%;                         /* Set maximum width */
 }
 
+/* Styling for the hero banner's h2 element */
 .hero-banner h2 {
-  background-color: var(--secondary);
-  color: var(--tertiary);
-  margin: 0; 
-  padding: 5px 10px;
-  font-size: 2.3rem;
-  line-height: 1.2;
-  display: inline;
+  background-color: var(--secondary);     /* Set background color */
+  color: var(--tertiary);                 /* Set text color */
+  margin: 0;                              /* Reset margin */
+  padding: 5px 10px;                      /* Set padding */
+  font-size: 2.3rem;                      /* Set font size */
+  line-height: 1.2;                       /* Set line height */
+  display: inline;                        /* Make inline */
 }
 
+/* Styling for images inside the hero banner */
 .hero-banner img {
-  max-width: 100%; 
+  max-width: 100%;                        /* Set maximum width */
 }
 /* Hero banner styles end */
 
 /* Content area styles start */
 .page-wrapper {
-  max-width: 88%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 88%;                         /* Set maximum width */
+  margin-left: auto;                      /* Center horizontally */
+  margin-right: auto;                     /* Center horizontally */
 }
 
+/* Styling for page sections */
 .page-section {
-  margin: 25px;
-  padding: 10px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
+  margin: 25px;                           /* Set margin */
+  padding: 10px 0;                        /* Set padding */
+  display: flex;                          /* Use flexbox for layout */
+  flex-direction: row;                    /* Arrange items in a row */
+  flex-wrap: wrap;                        /* Allow items to wrap */
+  align-items: stretch;                   /* Stretch items to fit */
+  justify-content: space-between;         /* Distribute space between items */
 }
 
+/* Styling for headings within page sections */
 .page-section > h2 {
-  flex: 0 0 20%;
-  text-align: right;
-  padding: 15px;
-  border-right: 4px solid var(--primary);
-  font-size: 4vw;
-  line-height: 1.1;
+  flex: 0 0 20%;                          /* Set flex properties */
+  text-align: right;                      /* Align text to the right */
+  padding: 15px;                          /* Set padding */
+  border-right: 4px solid var(--primary); /* Add right border */
+  font-size: 4vw;                         /* Set font size */
+  line-height: 1.1;                       /* Set line height */
 }
 
+/* Styling for content within page sections */
 .page-section > div {
-  flex: 0 0 77%;
+  flex: 0 0 77%;                          /* Set flex properties */
 }
 
+/* Styling for paragraphs within page sections */
 .page-section p {
-  margin-bottom: 20px;
+  margin-bottom: 20px;                    /* Set bottom margin */
 }
 
+/* Styling for flex containers */
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex;                          /* Use flexbox for layout */
+  flex-wrap: wrap;                        /* Allow items to wrap */
+  justify-content: center;                /* Center items horizontally */
 }
 
+/* Styling for flex items */
 .flex-item {
-  border: 5px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
+  border: 5px solid var(--secondary);     /* Set border */
+  background-color: var(--primary);       /* Set background color */
+  color: var(--tertiary);                 /* Set text color */
+  min-height: 150px;                      /* Set minimum height */
+  max-height: 150px;                      /* Set maximum height */
+  flex-basis: calc(50% - 1em);            /* Set flex basis */
+  display: flex;                          /* Use flexbox for layout */
+  align-items: flex-end;                  /* Align items to the bottom */
+  padding: 0 0 20px 0;                    /* Set padding */
+  margin: 0.5em;                          /* Set margin */
+  text-decoration: none;                  /* Remove underline */
+  background-blend-mode: soft-light;      /* Set background blend mode */
+  background-size: 150%;                  /* Set background size */
+  transition: all 0.5s;                   /* Add transition effect */
+  font-size: 0.9rem;                      /* Set font size */
 }
 
 /* Feature the first portfolio item */
 .flex-item:first-child {
-  min-height: 400px;
-  flex-basis: 100%;
+  min-height: 400px;                      /* Set minimum height */
+  flex-basis: 100%;                       /* Set flex basis */
 }
 
+/* Styling for flex items on hover */
 .flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);   /* Change background color on hover */
 }
 
+/* Styling for divs within flex items */
 .flex-item div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
+  background-color: var(--secondary);     /* Set background color */
+  padding: 8px 10px;                      /* Set padding */
 }
 
+/* Styling for headings within flex items */
 .flex-item h3 {
-  font-size: 1.6rem;
+  font-size: 1.6rem;                      /* Set font size */
 }
 /* Content area styles end */
 
 /* Contact area styles start */
 .contact address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
+  display: flex;                          /* Use flexbox for layout */
+  flex-wrap: wrap;                        /* Allow items to wrap */
+  justify-content: space-around;          /* Distribute space around items */
+  align-items: center;                    /* Align items vertically */
+  height: 100%;                           /* Set height */
 }
 
+/* Styling for links within contact addresses */
 .contact address a {
-  color: var(--tertiary);
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-style: normal;
-  background-image: linear-gradient(270deg, rgba(68, 88, 119, 1) 0%, rgba(68, 88, 119, 1));
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
-  display: inline-block;
+  color: var(--tertiary);                 /* Set text color */
+  padding: 5px;                           /* Set padding */
+  text-decoration: none;                  /* Remove underline */
+  font-size: 1.3rem;                      /* Set font size */
+  font-style: normal;                     /* Set font style */
+  background-image: linear-gradient(270deg, rgba(68, 88, 119, 1) 0%, rgba(68, 88, 119, 1)); /* Set background gradient */
+  background-repeat: no-repeat;           /* Set background repeat */
+  background-size: 100% 0.2em;            /* Set background size */
+  background-position: bottom;            /* Set background position */
+  transition: all 0.25s ease-in;          /* Add transition effect */
+  margin: 0 0.2rem 0.1rem;                /* Set margin */
+  display: inline-block;                  /* Make inline-block */
 }
 
+/* Styling for links within contact addresses on hover */
 .contact address a:hover {
-  background-size: 100% 88%;
-  color: rgba(146, 204, 206, 0.4);
+  background-size: 100% 88%;              /* Expand background on hover */
+  color: rgba(146, 204, 206, 0.4);        /* Change text color on hover */
 }
 /* Contact area styles end */
 
 /* Portfolio project images start */
+/* Styling for the weather dashboard project */
 .weather-dashboard {
-  background-image: url('../images/Weather App.png');
-  background-position: center;
-  background-size: cover;
-  min-height: 250px;
+  background-image: url('../images/Weather App.png'); /* Set background image */
+  background-position: center;             /* Set background position */
+  background-size: cover;                 /* Set background size */
+  min-height: 250px;                      /* Set minimum height */
 }
 
+/* Styling for the CMS tech blog project */
 .cms-tech-blog {
-  background-image: url('../images/CMS Tech Blog.png'); /* Add the path to your image */
-  background-position: center;
-  background-size: cover;
-  min-height: 250px;
+  background-image: url('../images/CMS Tech Blog.png'); /* Set background image */
+  background-position: center;             /* Set background position */
+  background-size: cover;                 /* Set background size */
+  min-height: 250px;                      /* Set minimum height */
 }
 
+/* Styling for the Horiseon project */
 .horiseon {
-  background-image: url('../images/Horiseon.png');
-  background-size: cover;
-  min-height: 250px;
+  background-image: url('../images/Horiseon.png'); /* Set background image */
+  background-size: cover;                 /* Set background size */
+  min-height: 250px;                      /* Set minimum height */
 }
 
+/* Styling for the work day scheduler project */
 .work-day-scheduler {
-  background-image: url('../images/Work-Day-Scheduler.png'); /* Add the path to your image */
-  background-position: center;
-  background-size: cover;
-  min-height: 250px;
+  background-image: url('../images/Work-Day-Scheduler.png'); /* Set background image */
+  background-position: center;             /* Set background position */
+  background-size: cover;                 /* Set background size */
+  min-height: 250px;                      /* Set minimum height */
 }
 
+/* Styling for the coding quiz project */
 .flex-item.coding-quiz {
-  background-image: url('../images/Coding Quiz.png'); /* Add the path to your image */
-  background-position: center;
-  background-size: cover;
-  min-height: 250px;
+  background-image: url('../images/Coding Quiz.png'); /* Set background image */
+  background-position: center;             /* Set background position */
+  background-size: cover;                 /* Set background size */
+  min-height: 250px;                      /* Set minimum height */
 }
 /* Portfolio project images end */
 
 /* Media Query styles start */
 @media screen and (max-width: 980px) {
+  /* Adjustments for header at smaller screen sizes */
   header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
+    padding: 0 0 10px 0;                  /* Set padding */
+    justify-content: center;              /* Center items horizontally */
+    text-align: center;                   /* Align text to the center */
   }
 
+  /* Adjustments for header h1 at smaller screen sizes */
   header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
+    width: 100%;                          /* Set width */
+    padding: 5px;                         /* Set padding */
+    margin-bottom: 10px;                  /* Set bottom margin */
+    font-size: 10vw;                      /* Set font size */
   }
 
+  /* Adjustments for navigation at smaller screen sizes */
   header nav {
-    justify-content: center;
+    justify-content: center;              /* Center items horizontally */
   }
 
+  /* Adjustments for page sections at smaller screen sizes */
   .page-section > h2,
   .page-section > div {
-    flex: 0 0 100%;
+    flex: 0 0 100%;                       /* Set flex properties */
   }
 
+  /* Adjustments for page section headings at smaller screen sizes */
   .page-section > h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
+    border-right: none;                   /* Remove right border */
+    border-bottom: 4px solid var(--primary); /* Add bottom border */
+    margin-bottom: 20px;                  /* Set bottom margin */
+    padding-bottom: 10px;                 /* Set bottom padding */
+    text-align: left;                     /* Align text to the left */
+    font-size: 7vw;                       /* Set font size */
   }
 }
 
 @media screen and (max-width: 768px) {
+  /* Adjustments for flex items at smaller screen sizes */
   .flex-item,
   .flex-item:first-child {
-    flex-basis: 100%;
+    flex-basis: 100%;                     /* Set flex basis */
   }
 
+  /* Adjustments for first flex item at smaller screen sizes */
   .flex-item:first-child {
-    min-height: 150px;
+    min-height: 150px;                    /* Set minimum height */
   }
 
+  /* Adjustments for hero banner at smaller screen sizes */
   .hero-banner {
-    justify-content: center;
-    text-align: center;
+    justify-content: center;              /* Center items horizontally */
+    text-align: center;                   /* Align text to the center */
   }
 
+  /* Adjustments for contact address at smaller screen sizes */
   .contact address {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column;               /* Arrange items in a column */
+    align-items: flex-start;              /* Align items to the start */
   }
 }
-/* Media Query styles end */ 
+/* Media Query styles end */
+
 
 
 
