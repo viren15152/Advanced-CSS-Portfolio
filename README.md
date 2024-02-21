@@ -17,7 +17,8 @@ The aim for this web application was to create portfolio page to display some of
 
 ## Visuals
 
-
+![Screenshot of top of page](<Screenshot 2024-02-21 at 18.09.44.png>)
+![Screenshot of work section](<Screenshot 2024-02-21 at 18.09.54.png>)
 
 ## Technologies Used
 
