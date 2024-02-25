@@ -37,7 +37,7 @@ Clone my Github repository and open in browser, or access via deployed link.
 ## Usage
 Use the top right navigation links to visit different parts of the website. You can explore the rest of the page by scrolling. The user can click on the project titles to view them via the deployed links. 
 
-Deployed Link: 
+Deployed Link: https://viren15152.github.io/Advanced-CSS-Portfolio/
 
 ## Contributing
 
